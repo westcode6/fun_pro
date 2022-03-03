@@ -2,11 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Application from './Application';
+// import Application from './Application';
+// import App from './App'
+import Blog from './Blog';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Application />
+    {/* <Application /> */}
+    {/* <App /> */}
+    <Blog />
   </React.StrictMode>,
   document.getElementById('root')
 );
