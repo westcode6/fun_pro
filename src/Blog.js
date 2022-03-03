@@ -38,6 +38,10 @@ const Blog = () => {
             body: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ea at soluta quisquam mollitia itaque, incidunt voluptatum doloremque fugiat iste?"
         },
     ])
+
+    function makeChange() {
+        setBlog("God is so faithful and Greatious");
+    }
     return (
         <div>
             <Navbar />
@@ -45,7 +49,7 @@ const Blog = () => {
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 py-10 sm:py-16 lg:py-20  bg-orange-50">
     { blog.map((blog) => (
-                    <div className="px-7 py-4" >
+                    <div className="px-7 py-4" onClick={() => {makeChange()} }>
                         <h2 className="bg-orange-700 p-2 text-sm font-bold text-white w-10 text-center">{blog.id}</h2>
                         <div className="py-5 px-5 bg-white shadow-xl hover:shadow-lg transform transition hover:-translate-x-1" key={blog.id}>
                             <h2 className="text-2xl font-semibold text-gray-9800">{blog.title}</h2>
