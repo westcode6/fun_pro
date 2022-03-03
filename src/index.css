@@ -1,0 +1,61 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.animate{
+  position: relative;
+  animation-name: run;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+  transition: width 2s, height 2s, transform 2s;
+  transform: rotate(360deg);
+}
+
+@keyframes run {
+
+  to {right: 320px}
+}
+
+
+.animateAgain{
+  position: relative;
+  animation-name: fly;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+  transition: width 10s, height 3s, transform 3s;
+  transform: rotate(0deg);
+}
+
+@keyframes fly {
+
+  to {right: 330px}
+}
+
+.ani-text{
+  position: relative;
+  animation-name: example;
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+
+  transition-timing-function: ease;
+}
+
+@keyframes example {
+  from {right: 0px;}
+  to {left: 250px;}
+}
